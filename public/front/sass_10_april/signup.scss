@@ -1,0 +1,144 @@
+// signup css
+#signupForm{
+    padding:70px 0;    
+    .navbar-brand{
+        img{
+            width: 70px;
+            height: auto;
+        }
+    }
+    .inputsForm {
+        margin-top: 25px;
+    }
+    h2{
+        color: #06083b;
+        position: relative;
+        padding-left: 30px;
+        &:before{
+            position: absolute;
+            content: "";
+            width: 10px;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background: #db9a29;
+        }
+    }
+     .formStart{
+        background-color: #fff;
+        padding:40px;
+    }
+
+}
+
+// login css
+#loginForm{
+    padding:70px 0;
+    .loginFormSubmit{
+        background-color: #fff;
+    }
+    .inputsForm {
+        margin-top: 25px;
+        .checkButton{
+            justify-content: space-between;
+                a{
+                    color: #db9a29;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            
+        }
+    }
+    .formStart{
+        padding: 30px;
+        .navbar-brand{
+            img{
+                width:70px;
+                height:auto;
+            }
+        }
+        h2{
+            color: #06083b;
+            position: relative;
+            padding-left: 20px;
+            &:before{
+                position: absolute;
+                content: "";
+                width: 10px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background: #db9a29;
+            }
+        }
+    }
+    .loginImage {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        background-color: #db9a29;
+        justify-content: center;
+    }
+}
+
+// payment information
+
+#paymentForm{
+    padding:70px 0;
+   
+    .loginFormSubmit{
+        background-color: #fff;
+        padding: 40px;
+    }
+    
+}
+.numberBiling{
+    .numberRound
+    {
+        width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1.5px solid black;
+  
+    }
+    .textItem{
+        h6{
+            line-height: 2;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px)  {
+    // signup media
+    #signupForm{
+        .formStart{
+            padding:25px;
+        }
+     }
+    #signupForm{
+        .navbar-brand{
+            img{
+                width: 40px;
+                height: auto;
+            }
+        }
+        h2{
+           font-size: 25px;
+           padding-left:20px;
+        }
+    }
+    #paymentForm{
+        .loginFormSubmit{            
+            .billingInfo{
+                padding-bottom: 40px;
+            }
+        }
+        
+    }
+
+    // login media
+
+}

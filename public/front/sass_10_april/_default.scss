@@ -1,0 +1,160 @@
+$primary-font:'Poppins', 'sans-seri';
+$heading-font:'Oxanium', 'cursive';
+$primary-size:15px;
+$primary-weight:400;
+
+
+%extend-style{
+    font-size: 60px;
+    color: white;
+   line-height: 1;
+}
+
+%extend-heading{
+    color: #06083b;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    &:before{
+        position: absolute;
+        content: "";
+        width: 10px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: #db9a29;
+    }
+}
+
+
+
+// font family
+
+  @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+// button css
+
+
+.btn{
+    background: transparent;
+    padding: 10px 30px;
+    position: relative;
+    z-index: 1;
+    border: none;
+    text-transform: uppercase;
+    --bs-btn-active-bg:none;
+    &:hover{
+        background: transparent;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        right: -13px;
+        top: 0;
+        height: 100%;
+        width: 5px;
+        transform: skewX(-16deg);
+        z-index: 1;
+        opacity: 1;
+        background-image: none;
+        bottom: 0;
+        border-radius: 0;
+        left: auto;
+        background-color: #e4a101;
+        transition: .3s linear;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transform: skewX(-16deg);
+        z-index: -1;
+        opacity: 1;
+        background-image: none;
+        bottom: 0;
+        border-radius: 0;
+        left: auto;
+        background-color: #e4a101;
+    }
+    &:hover::before {
+        right: 0;
+    }
+}
+
+.btn-primary{
+    &:before{
+        background-color: #e4a101;
+    }
+    &:after{
+        background-color: #e4a101;
+    }
+}
+.btn-secondary{
+    &:before{
+        background-color: #06083b;
+    }
+    &:after{
+        background-color: #06083b;
+    }
+}
+
+
+// video css
+.video-container {
+	max-width: 640px;
+    width: 100%;
+	border-radius: 4px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0px 8px 20px rgba(black, 0.4);
+
+	.video-wrapper {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	video {
+		width: 100%;
+		height: 100%;
+		border-radius: 4px;
+	}
+}
+
+.play-button-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	pointer-events: none;
+	#circle-play-b {
+		cursor: pointer;
+		pointer-events: auto;
+
+		svg {
+			width: 50px;
+			height: 50px;
+			fill: #fff;
+			stroke: #fff;
+			cursor: pointer;
+			background-color: rgba(black, 0.2);
+			border-radius: 50%;
+			opacity: 0.9;
+		}
+	}
+}
+

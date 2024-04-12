@@ -1,0 +1,13 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+header.logo_main_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.logo_box img.logo {
+    height: 100px;
+}

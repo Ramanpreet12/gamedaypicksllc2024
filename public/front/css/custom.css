@@ -1,0 +1,207 @@
+.myDiv {
+    height: 200px;
+    width: 200px;
+    background: var(--backgroundColor);
+}
+
+.aSidebarCard {
+    background-color: #322a71;
+    border-radius: 10px;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.aSidebarCard {
+    text-align: left;
+}
+
+.aSidebarCard h4 {
+    font-size: 23px;
+    margin-bottom: 25px;
+    padding: 0 20px;
+    color: #f1f1f1;
+}
+
+.aSidebarCard h4 a{
+    color: #e9e9e9f5;
+}
+.aSidebarCard h4>span {
+    border-bottom: 3px solid #db9a29;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+
+ul.sidebarLink {
+    list-style: none;
+    padding: 0px;
+    border-top: 0.5px solid #4f4691;
+    margin-bottom: 0;
+}
+
+ul.sidebarLink li+li {
+    border-top: 0.5px solid #4f4691;
+}
+
+ul.sidebarLink li a {
+    padding: 10px 25px;
+    display: block;
+    text-decoration: none;
+    color: #e9e9e9f5;
+    position: relative;
+    z-index: 1;
+}
+
+ul.sidebarLink li a:hover {
+    color: #fff;
+}
+
+ul.sidebarLink li a:before {
+    left: 0;
+    position: absolute;
+    content: "";
+    background-color: #db9a29;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    transition: 0.5s;
+    min-width: 0;
+    opacity: 0;
+}
+
+ul.sidebarLink li a:hover:before {
+    min-width: calc(100% + 0px);
+    opacity: 1;
+}
+.personal_details_div{
+   border: 0.5px solid #4f4691;
+   border-radius: 10px;
+}
+
+.personal_details_div form input{
+    /* background: #322a71; */
+    /* background: #322b66;
+    color: #e9e9e9f5;
+    border: 0.5px solid #5d559e;
+    border-radius: 10px; */
+}
+
+.personal_details_div form input:focus{
+    /* background: #322a71; */
+    /* background: #271f5e;
+    color: #e9e9e9f5;
+    border: 0.5px solid #776dc4;
+    border-radius: 10px; */
+}
+input::placeholder {
+    color: #e9e9e9c2;
+  }
+
+  ::-webkit-input-placeholder {  /* Chrome/Opera/Safari */
+    color: #e9e9e9f5 !important;
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: #e9e9e9f5;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #e9e9e9f5;
+  }
+  :-ms-input-placeholder {  /* Edge/IE 10+ */
+    color: #e9e9e9f5;
+  }
+
+/* 31-05-23 */
+.countryTelCode .iti.iti--allow-dropdown.iti--show-flags {
+    display: block;
+}
+.countryTelCode span.iti__country-name {
+    color: black;
+}
+.personal-Img img.img-fluid.borderImg {
+    max-width: 50%;
+}
+.personalInfoButton {
+    padding: 20px 0;
+}
+#personalInfoBoard{
+    padding: 70px 0px;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* dshboard page */
+
+
+.dashboardCard-inner {
+    border-radius: 7px;
+    height: 100%;
+}
+        .dashboardCard {
+            height: 100%;
+            padding: 20px;
+            border: 0.5px solid #4f4691;
+            border-radius: 10px;
+}
+        .dashboardCard h4.card-title {
+            padding-bottom: 10px;
+        }
+         td.matchDate {
+            white-space: nowrap;
+        }
+        .fixureMatch .versis h5{
+            padding: 0 10px;
+        }
+        .fixureMatch .teamCard {
+            width: calc(50% - 22px);
+        }
+       
+
+
+
+/* media query */
+@media only screen and (min-width: 320px) and (max-width: 575px)  {
+
+    #personalInfoBoard{
+        padding: 20px 0px;
+    }
+    
+
+}
+
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+    .personal-Img img.img-fluid.borderImg {
+        max-width: 100%;
+    }
+
+  
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .fixureMatch .btnPickteam{
+        padding: 7px 10px;
+        letter-spacing: -1px;
+        font-size: 14px;
+    }
+    .fixureMatch .btnPickteam:before{
+        right: -8px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .fixureMatch .btnPickteam{
+        padding: 10px 14px;
+        letter-spacing: -1px;
+        font-size: 15px;
+    } 
+}
+
+@media (min-width: 768px) {
+    .tablePickTeam {
+        padding-right: 30px;
+    }
+}

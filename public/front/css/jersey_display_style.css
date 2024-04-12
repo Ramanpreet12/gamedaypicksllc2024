@@ -1,0 +1,567 @@
+
+/* Basic Styling */
+/* html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+} */
+
+.jersey_main_container {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    /* padding: 15px; */
+    width: 100%;
+    display: flex;
+    /* border-bottom: 1px solid #e9ecef; */
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+/* Columns */
+.jersey-left-column {
+    width: 55%;
+    position: relative;
+}
+
+.jersey-right-column {
+    width: 40%;
+    margin-top: 60px;
+    margin-left: 31px;
+}
+
+/* Left Column */
+/* .jersey-left-column img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+} */
+
+.jersey-left-column img {
+    width: 90%;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    /* height: 95%; */
+}
+
+
+
+.jersey-left-column img.active {
+    opacity: 1;
+    height: 95%;
+    /* padding: 20px; */
+}
+
+/* Product Description */
+.jersey-product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+
+.jersey-product-description .jersey_back_link {
+    font-size: 12px;
+    color: #358ED7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.jersey-product-description h2 {
+    font-weight: 300;
+    font-size: 30px;
+    color: #43484D;
+    /* letter-spacing: -2px; */
+}
+
+.jersey_form_box label ,  .plan .cf label{
+    color: #43484D;
+}
+
+.jersey-product-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939E;
+    line-height: 24px;
+}
+
+/* Product Color */
+.product-color {
+    margin-bottom: 30px;
+}
+
+.color-choose div {
+    display: inline-block;
+}
+
+.color-choose input[type="radio"] {
+    display: none;
+}
+
+.color-choose input[type="radio"]+label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+}
+
+.color-choose input[type="radio"]#red+label span {
+    background-color: #C91524;
+}
+
+.color-choose input[type="radio"]#blue+label span {
+    background-color: #314780;
+}
+
+.color-choose input[type="radio"]#black+label span {
+    background-color: #323232;
+}
+
+.color-choose input[type="radio"]:checked+label span {
+    background-image: url(images/check-icn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Cable Configuration */
+.cable-choose {
+    margin-bottom: 20px;
+}
+
+.cable-choose button {
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    padding: 13px 20px;
+    font-size: 14px;
+    color: #5E6977;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.cable-choose button:hover,
+.cable-choose button:active,
+.cable-choose button:focus {
+    border: 2px solid #86939E;
+    outline: none;
+}
+
+.cable-config {
+    /* border-bottom: 1px solid #E1E8EE; */
+    margin-bottom: 20px;
+}
+
+.cable-config a {
+    color: #358ED7;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.cable-config a:before {
+    content: "?";
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid rgba(53, 142, 215, 0.5);
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    opacity: 0.5;
+    margin-right: 5px;
+}
+
+/* Product Price */
+.jersey-product-price {
+    display: flex;
+    align-items: center;
+}
+
+.jersey-product-price span {
+    font-size: 22px;
+    font-weight: 600;
+    color: #43474d;
+    margin-right: 20px;
+    margin-bottom: 21px;
+}
+
+.buy-btn  , .cart-btn{
+    display: inline-block;
+    background-color: #DA9A29;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: all .5s;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+}
+
+.buy-btn:hover , .cart-btn:hover{
+    background-color: #d18605;
+}
+
+/* COLUMNS for radio buttons on gender*/
+.gender_col {
+    display: block;
+    float: left;
+    margin: 0% 0 1% 2.6%;
+}
+
+.gender_col:first-of-type {
+    margin-left: 0;
+}
+
+/* CLEARFIX */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+/* FORM */
+.jersey_radio_button .plan input {
+    display: none;
+}
+
+.jersey_radio_button label {
+    position: relative;
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #CED4DA;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 76px;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.jersey_radio_button .plan input:checked+label {
+    box-shadow: 0 0 7px 1px rgba(14, 14, 14, .16);
+}
+
+.jersey_radio_button .plan input:checked+label:after {
+    content: "\2713";
+    width: 28px;
+    height: 28px;
+    line-height: 26px;
+    border-radius: 116%;
+    /* border: 1px solid #333; */
+    background-color: #DA9A29;
+    z-index: 999;
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    color: #fff;
+}
+
+/* sizes radio buttons */
+
+
+
+/* FORM */
+.jersey_sizes_radio_button .plan input {
+    display: none;
+}
+
+.jersey_sizes_radio_button label {
+    position: relative;
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #CED4DA;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 62px;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.jersey_sizes_radio_button .plan input:checked+label {
+    box-shadow: 0 0 7px 1px rgba(14, 14, 14, .16);
+}
+
+.jersey_sizes_radio_button .plan input:checked+label:after {
+    content: "\2713";
+    width: 28px;
+    height: 28px;
+    line-height: 26px;
+    border-radius: 116%;
+    /* border: 1px solid #333; */
+    background-color: #DA9A29;
+    z-index: 999;
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    color: #fff;
+}
+
+
+
+
+/* scroll text */
+.scroll_text_box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 140px;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    /* padding: 0 20px; */
+}
+
+.marquee {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 39%;
+    background: #bcc4be36;
+}
+
+.marquee p {
+    display: inline-block;
+    color: #4d4d4d;
+    padding-left: 100%;
+    font-family: 'Poppins', 'sans-serif';
+    text-align: center;
+    /* -webkit-text-stroke: 1px red; */
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 25px;
+    animation: marquee 10s linear infinite;
+    letter-spacing: 10;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 940px) {
+    .main_container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .jersey-left-column,
+    .jersey-right-column {
+        width: 100%;
+    }
+
+    .jersey-left-column img {
+        width: 300px;
+        right: 0;
+        top: -65px;
+        left: initial;
+    }
+}
+
+@media (max-width: 535px) {
+    .jersey-left-column img {
+        width: 220px;
+        top: -85px;
+    }
+}
+
+
+
+/* lightslider */
+
+
+/* @charset "utf-8"; */
+/* CSS Document */
+/* body{
+	margin:0px;
+	padding: 0px;
+	background-color:#eef8ff;
+} */
+
+.detail-box a{
+	text-decoration:none;
+}
+/* .box{
+	width:300px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 25px;
+} */
+
+.box {
+    width: 269px;
+    box-shadow: 1px 1px 16px rgba(0.05,0.01,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+
+.slide-img{
+	/* height: 450px; */
+	height: 300px;
+	position:relative;
+}
+.slide-img img{
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+    padding:20px;
+}
+.detail-box{
+	width: 100%;
+    min-height: 122px;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	font-family: calibri;
+    border-top: 1px solid #f1eded;
+}
+.type{
+	display: flex;
+	flex-direction: column;
+}
+.type a{
+	color:#222222;
+	margin: 5px 0px;
+	/* font-weight: 700; */
+	letter-spacing: 0.1px;
+	padding-right: 8px;
+    font-size: 13px;
+
+}
+.type span{
+	color:rgba(26,26,26,0.5);
+}
+.price{
+	color: #333333;
+	font-weight: 600;
+	font-size: 1.1rem;
+	font-family: poppins;
+	letter-spacing: 0.5px;
+}
+/* .overlay{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:100%;
+	height: 100%;
+	background-color: rgba(92,95,236,0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+/* .buy-btn{
+	width:160px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	color:#252525;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: calibri;
+	border-radius: 20px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+} */
+/* .buy-btn:hover{
+	color:#FFFFFF;
+	background-color: #f15fa3;
+	transition: all ease 0.3s;
+} */
+/* .overlay{
+	visibility: hidden;
+}
+.slide-img:hover .overlay{
+	visibility: visible;
+	animation:fade 0.5s;
+}
+
+@keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+} */
+.slider{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin-top: -60px;
+    border-top: 1px solid #f1eded;
+}
+
+
+h6.slider_heading {
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+
+
+h6.jersey_radio_button_label {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+
+/*  13-12-23  */
+#gamedayJersey li img {
+    width: 100%;
+    object-fit: cover;
+}
+

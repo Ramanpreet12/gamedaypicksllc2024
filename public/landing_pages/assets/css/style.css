@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap');
+@font-face {
+    font-family: 'digital-7regular';
+    src: url('../fonts/digital-7-webfont.woff2') format('woff2'),
+         url('../fonts/digital-7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OrlojEa9eW';
+    src: url('../fonts/OrlojEa9eW.eot');
+    src: url('../fonts/OrlojEa9eW.eot') format('embedded-opentype'),
+         url('../fonts/OrlojEa9eW.woff2') format('woff2'),
+         url('../fonts/OrlojEa9eW.woff') format('woff'),
+         url('../fonts/OrlojEa9eW.ttf') format('truetype'),
+         url('../fonts/OrlojEa9eW.svg#OrlojEa9eW') format('svg');
+}
+
+
+body{
+    padding: 0px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+a {
+    color: #0e115a;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.campaignBlock {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.campaignBlock.getInTheGameBlock {
+    max-width: 1500px; 
+}
+
+.campaignBlockcontent {
+    background-color: transparent;
+    padding: 20px 30px;
+    /*border: 5px solid transparent;*/
+}
+.campaignBlockWrap {
+    display: flex;    
+    justify-content: center;
+
+}
+.campaignVsText {
+    flex: 0 0 200px;
+    text-align: center;
+    align-self: center;
+}
+span.money-BagImg {
+    display: inline-block;
+    width: 60px;
+    position: relative;
+    margin-top: -18px;
+}
+.campaignVsText span.textitme { font-size: 20px; font-weight: 700; display: inline-block; width: 100%; }
+.campaignVsText span.textitme img { width:60px; }
+.campaignBlockcontent .campaignBtn a {
+    display: flex;
+    padding: 0 30px 0 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px 0 #999;
+    font-family: 'Bebas Neue';
+}
+.campaignBlockcontent .campaignBtn a:hover {
+    background-color: #f3f3f5;
+    box-shadow: 0 4px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.campaignBlockcontent .campaignBtn a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 150%;
+    width: 200%;
+    height: 100%;
+    transform: skewX(-20deg);
+    background-image: linear-gradient(90deg,transparent, hsla(0, 0%, 72%, 0.25),transparent);
+}
+.campaignBlockcontent .campaignBtn a:hover:after {
+    animation: shine 0.75s cubic-bezier(0.01, 0.56, 1, 1);
+}
+.campaignBlockcontent .campaignBtn a img {
+    position: relative;
+    z-index: 1;
+    height: 40px;
+}
+.totalvote, .makeVoteCount  {
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 51px;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #3b2d23;
+    padding: 20px;
+    border-radius: 8px;
+}
+.campaignBlockcontent  a .logo-icon {
+    background-color: #fff;
+}
+.totalvote span.totalVoteNo, .makeVoteCount .textTag {
+    color:#3b2d23;
+    background-color: #f6b01c;
+    padding: 6px 10px 1px 10px;
+    line-height: 42px;
+    display: inline-flex;
+    width: auto;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.makeVoteCount  {
+    background-color: #fff;
+    color: #0e115a;
+}
+.makeVoteCount .textTag {
+    background-color: #ff344c;
+}
+
+.campaignBlockimg img.img-fluid {
+    max-width: 370px;
+    object-fit: contain;
+    height: 100%;
+    /* filter: drop-shadow(4px 10px 3px #333); */
+}
+.google-row, .facebook-row {
+    width: 210px;
+}
+
+@keyframes shine{
+    to{
+      left:-200%;
+    }
+  }
+  h4.HeadingText {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 30px;
+    color: #0e115a;
+    letter-spacing: 2px;
+}
+.countdownBlock{
+    font-family: 'digital-7regular';
+}
+.countdownBlock {
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 44px;
+    background-color: #000000;
+    color: #ff0000;
+    margin-top: 15px;
+    border: 4px solid #333;
+    letter-spacing: 1.5px;
+    line-height: 42px;
+    word-break: break-word;
+}
+/* .campaignBlockWrap .google-row, .campaignBlockWrap .facebook-row {
+    flex: 0 0 175px;
+    max-width: 175px;
+} */
+
+.modal .modal-dialog {
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+.modal button.close {
+    background-color: #9d9d9d;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 44px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    opacity: 1;
+}
+#social_media_sharing_buttons img {
+    width: 36px;
+    box-shadow: 0;
+    padding: 6px;
+    display: inline;
+    border: 0;
+    }
+.modal .modal-dialog .modal-header {
+        border-bottom: 0px;
+        justify-content: end;
+    }
+
+section#campaign-section { padding-bottom: 30px; padding-top: 30px; position: relative; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+section#campaign-section:before { content: ""; background: #fff; position: absolute; bottom: 0; top: 0; left: 0; right: 0; opacity: 0.1; }
+.campaignBlockimg {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* height: 420px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campaignBlock.front-img-campaign img.img-fluid {
+    max-width: 450px;
+}
+
+    footer {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0 15px 0;
+        border-top: 1px solid rgb(0 0 0 / 10%);
+    }
+#socialMedia {
+        margin-bottom: 20px;
+    }
+    #social_media_sharing_buttons {
+        display: flex;
+        justify-content: center;
+    }
+    #socialMedia a {
+        font-size: 22px;
+        margin: 0px 10px;
+        color: #fff;
+        text-decoration: none;
+        background-color: #000;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        justify-content: center;
+        line-height: 40px;
+    }
+    
+    span.totalVoteTitle {
+        display: block;
+    }
+    span.textBlockLine {
+        display: block;
+    }
+
+    .modal-open .modal {
+        background-color: rgb(0 0 0 / 49%);
+    }
+.modal .modal-dialog {
+        max-width: 500px;
+        width: 90%;
+        text-align: center;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+.modal button.close {
+        background-color: #444;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        font-size: 34px;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+        line-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .modal-open .modal.fade {
+        opacity: 1;
+    }
+.thanksVtModal  p.contentThanks {
+        font-size: 16px;
+    }
+.thanksVtModal  .modal-body h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .thanksVtModal .modal-header {
+        padding-bottom: 0px;
+    }
+    .modal .modal-body {
+        padding-bottom: 25px;
+    }
+    .modal button.close:hover {
+        background-color: #505050;
+    }
+    .thanksVtModal a {
+        color: #ff0000;
+    }
+
+    #campaign-facebook a {
+        background-color: #1877f2;
+    }
+.campaignBlockcontent .campaignBtn a .logo-icon {
+    display: flex;
+    width: 60px;
+    justify-content: center;
+    margin-right: 25px;
+    height: 60px;
+    align-items: center;
+    position: relative;
+    border-radius: 0;
+}
+.campaignBlockcontent .campaignBtn a .logo-icon:after {
+    content: "";
+    border: 8px solid;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 23px;
+    right: -15px;
+}
+    .campaignBlockcontent #campaign-google a {
+        background-color: #ed3739;
+    }
+
+   
+    .voteBlockimg {
+        text-align: center;
+    }
+    .text-primary {
+        color: #ff0000 !important;
+    }
+
+    .btn-primary {
+        background-color: #0e115a;
+        color: #fff  !important;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #0e116f;
+        color: #fff  !important;
+        border: none;
+      }
+
+.button-link a.btn { background: #aa0245; color: #fff; font-family: 'Bebas Neue'; border-radius: 0; border: 4px solid #cf0052; padding: 4px 20px; font-size: 24px; }
+.button-link a.btn:hover{background: #cf0052;}
+
+/* 7-7-23 */
+.vfluidPlan {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 50%;
+}
+ 
+.getInTheGameBlock .campaignBlockimg img.img-fluid {
+max-width: 1500px;
+    /* filter: drop-shadow(7px 14px 3px #222); */
+    width: 100%;
+}
+
+
+
+#campaign-section.getInTheGameSection:before { 
+    opacity: 1;
+}
+.gamedaypicksLlc .campaignBlock  img.img-fluid {
+    max-width: 620px;
+    filter: none;
+}
+.gamedaypicksLlc .campaignBlock img.img-fluid.imgGoogleVSfacebook {
+    max-width: 770px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+#campaign-section.gamedaypicksLlc { 
+    background-position: bottom;
+}
+ 
+.gamedaypicksLlc .campaignBlockcontent {
+    padding-bottom: 0px;
+}
+.gamedaypicksLlc .campaignBlockcontent h4.HeadingText { 
+    margin-bottom: 10px; 
+}
+.gamedaypicksLlc .voteBlockimg, .gamedaypicksLlc .totalvote {
+    margin-top: 50px;
+}
+/* .gamedaypicksLlc .google-row {
+    width: 150px;
+    position: relative;
+    left: 100%;
+}
+.gamedaypicksLlc .facebook-row {
+    width: 150px;
+    position: relative;
+    right:50%;
+} */
+.gamedaypicksLlc  .totalvote, .gamedaypicksLlc  .makeVoteCount {
+    height: 164px;
+}
+.gvsfCampaignImgBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: -37.6%;
+    margin-right: -37.6%;
+    margin-top: 15px;
+}
+ .gvsfCampaignImgBlock .img-vs-gameday {
+    flex: 17%;
+    max-width: 17%;
+    margin-left: 3.4%;
+    margin-right: 3.4%;
+    /* filter: drop-shadow(2px 5px 3px #333); */
+}
+ .gvsfCampaignImgBlock .googleGameday {
+    flex: 38.8%;
+    max-width: 38.8%; 
+    /* filter: drop-shadow(2px 5px 3px #333); */
+}
+ .gvsfCampaignImgBlock .img-FacebookGameday {
+    flex: 39.66%;
+    max-width: 39.66%; 
+    /* filter: drop-shadow(2px 5px 3px #333); */
+}
+.gvsfCampaignImgBlock .googleGameday:hover, .gvsfCampaignImgBlock .img-FacebookGameday:hover {
+    filter: drop-shadow(1px 1px 3px #666);
+}
+
+
+@media (min-width: 1366px){ 
+    .gamedaypicksLlc .campaignBlock img.img-fluid {
+        max-width: 550px; 
+    }
+    }
+@media (min-width: 1400px){
+.container {
+    max-width: 1320px;
+}
+ 
+}
+@media (min-width: 1600px){
+    .container {
+        max-width: 1520px;
+    }
+    .gamedaypicksLlc .campaignBlock img.img-fluid.imgGoogleVSfacebook {
+        max-width: 900px; 
+    }
+    .gamedaypicksLlc .campaignBlock img.img-fluid {
+        max-width: 700px; 
+    }
+    }
+
+
+    @media only screen and (min-width: 320px) and (max-width: 767px)  {   
+    .makeVoteCount {
+        margin-bottom: 30px;
+    }
+   .totalvote{ 
+        margin-bottom: 30px;
+    }
+    .campaignBlockcontent .campaignBtn a {
+        padding: 10px 10px;
+    }
+   
+    .campaignVsText {
+        flex: 0 0 70px;
+        padding: 0 10px;
+    }
+    /* .campaignBlockWrap .google-row, .campaignBlockWrap .facebook-row {
+        flex: 0 0 120px;
+        max-width: 120px;
+    } */
+    .campaignBlockcontent .campaignBtn a {
+        padding: 5px 10px 5px 5px;
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+    .countdownBlock {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .campaignBlockcontent {
+        padding: 30px 0px;
+        border: none;
+    }
+    .campaignBlockcontent .campaignBtn a .logo-icon {
+        width: 40px;
+        margin-right: 5px;
+        height: 40px;
+    }
+    .campaignBlockcontent .campaignBtn a img {
+        height: 30px;
+    }
+    .campaignBlockWrap .google-row, .campaignBlockWrap .facebook-row {
+        max-width: 200px;
+        width: 100%;
+    }
+    .voteBlockimg {
+        margin-bottom:20px;
+    }
+    .gamedaypicksLlc .campaignBlock  img.img-fluid {
+        width: 100%;
+    }
+    .gamedaypicksLlc .campaignBlock img.img-fluid.imgGoogleVSfacebook {
+        width: 100%;
+    }
+    .campaignBlock .voteBlockimg {
+        margin-top: 0px;
+    }
+    .getInTheGameBlock .campaignBlockimg img.img-fluid { 
+        width: 100%;
+    }
+    .gvsfCampaignImgBlock { 
+        margin-left: 0;
+        margin-right: 0;
+    }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 992px)  { 
+        .container{
+max-width: 100%;
+        }
+    .totalvote, .makeVoteCount {
+        font-size: 33px;
+    }
+    .totalvote, .makeVoteCount { 
+        padding: 20px 10px; 
+    }
+    .gamedaypicksLlc .campaignBlock  img.img-fluid {
+        width: 100%;
+    }
+    .gamedaypicksLlc .campaignBlock img.img-fluid.imgGoogleVSfacebook {
+        width: 100%;
+    }
+    .getInTheGameBlock .campaignBlockimg img.img-fluid { 
+        width: 100%;
+    }
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1365px)  {  
+    .gamedaypicksLlc .campaignBlock  img.img-fluid {
+        width: 100%;
+    }
+    .gamedaypicksLlc .campaignBlock img.img-fluid.imgGoogleVSfacebook {
+        width: 100%;
+    }
+    .totalvote, .makeVoteCount { 
+        padding: 20px 10px; 
+    }
+    .getInTheGameBlock .campaignBlockimg img.img-fluid { 
+        width: 100%;
+    }
+    }
